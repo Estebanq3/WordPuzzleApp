@@ -1,12 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:quizapp2/view/screens/start_screen.dart';
+import 'package:wordPuzzle/view/screens/start_screen.dart';
 import 'package:word_search/word_search.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../utilities/list_first_puzzle.dart';
 import 'package:info_popup/info_popup.dart';
 import 'package:animated_dialog_box/animated_dialog_box.dart';
-import 'package:collection/equality.dart';
 
 //Seccion de los botones de toggle para ver cuales letras han sido marcadas en el puzzle
 final vertical = false;

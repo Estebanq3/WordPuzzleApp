@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp2/view/screens/start_screen.dart';
+import 'package:wordPuzzle/view/screens/start_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
           SizedBox(
               width: 150,
               height: 150,
-              child: Image.asset('assets/GeneralImages/logo_quiz_app_2.png')),
+              child: Image.asset('assets/GeneralImages/word_puzzle.png')),
         ]),
       ),
     );

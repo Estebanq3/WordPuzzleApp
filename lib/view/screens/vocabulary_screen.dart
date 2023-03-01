@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quizapp2/view/screens/colores_screen.dart';
-import 'package:quizapp2/view/screens/clothes_screen.dart';
-import 'package:quizapp2/view/screens/sizes_screen.dart';
-import 'package:quizapp2/view/screens/materials_screen.dart';
-import 'package:quizapp2/view/screens/adjectives_screen.dart';
-import 'package:quizapp2/view/screens/start_screen.dart';
+import 'package:wordPuzzle/view/screens/colores_screen.dart';
+import 'package:wordPuzzle/view/screens/clothes_screen.dart';
+import 'package:wordPuzzle/view/screens/sizes_screen.dart';
+import 'package:wordPuzzle/view/screens/materials_screen.dart';
+import 'package:wordPuzzle/view/screens/adjectives_screen.dart';
+import 'package:wordPuzzle/view/screens/start_screen.dart';
 
 // ignore: must_be_immutable
 class ThirdPage extends StatelessWidget {

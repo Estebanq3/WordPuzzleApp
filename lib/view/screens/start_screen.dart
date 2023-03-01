@@ -2,9 +2,9 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:quizapp2/view/screens/vocabulary_screen.dart';
-import 'package:quizapp2/view/screens/word_formation.dart';
-import 'package:quizapp2/view/screens/testing_screen.dart';
+import 'package:wordPuzzle/view/screens/vocabulary_screen.dart';
+import 'package:wordPuzzle/view/screens/word_formation.dart';
+import 'package:wordPuzzle/view/screens/testing_screen.dart';
 import '../../controller/index_controller.dart';
 import 'home_screen.dart';
 import '../../utilities/list_first_puzzle.dart';
@@ -68,14 +68,13 @@ class HomeScreen extends StatelessWidget {
                   style: GoogleFonts.mulish(
                     fontSize: 35,
                     fontWeight: FontWeight.w700,
-                    color: Colors.lightBlueAccent,
+                    color: Colors.lightGreen,
                   ),
                 ),
                 SizedBox(
                     width: 150,
                     height: 300,
-                    child: Image.asset(
-                        'assets/GeneralImages/logo_quiz_app_2.png')),
+                    child: Image.asset('assets/GeneralImages/clothes.png')),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.pushReplacement(
@@ -84,7 +83,7 @@ class HomeScreen extends StatelessWidget {
                             builder: (context) => const ThirdPage()));
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.lightBlueAccent,
+                    backgroundColor: Colors.amber,
                   ),
                   child: Text(
                     'Review Vocabulary',
@@ -106,7 +105,7 @@ class HomeScreen extends StatelessWidget {
                             builder: (context) => CrosswordGame()));
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.lightBlueAccent,
+                    backgroundColor: Colors.lightGreen,
                   ),
                   child: Text(
                     'Word Puzzle Game',
