@@ -83,8 +83,9 @@ flutter:
       - assets/logo_quiz_app.png
       - assets/GeneralImages/logo_quiz_app_2.png
       - assets/UCR_icon.png
+      - assets/facultad_letras_logo.png
+      - assets/TCU658.png
       - assets/grammar.png
-      - assets/costa_rica_food.png
       
       #Return and home button
       - assets/home.png

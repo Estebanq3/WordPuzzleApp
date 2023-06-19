@@ -20,6 +20,14 @@ class ThirdPage extends StatelessWidget {
           "Vocabulary",
           textAlign: TextAlign.center,
         ),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            // Navigate back to the previous screen
+            Navigator.pushReplacement(
+                context, MaterialPageRoute(builder: (context) => HomeScreen()));
+          },
+        ),
       ),
       body: Center(
         child: GridView.count(

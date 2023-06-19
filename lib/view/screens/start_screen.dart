@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:wordPuzzle/view/screens/vocabulary_screen.dart';
 import 'package:wordPuzzle/view/screens/word_formation.dart';
 import 'package:wordPuzzle/view/screens/testing_screen.dart';
+import 'package:wordPuzzle/view/screens/instructions_screen.dart';
 import '../../controller/index_controller.dart';
 import 'home_screen.dart';
 import '../../utilities/list_first_puzzle.dart';
@@ -62,60 +63,123 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                SizedBox(height: 30),
                 Text(
                   "Does this fit me?",
                   textAlign: TextAlign.center,
                   style: GoogleFonts.mulish(
                     fontSize: 35,
                     fontWeight: FontWeight.w700,
-                    color: Colors.lightGreen,
+                    color: Colors.lightBlue,
                   ),
                 ),
                 SizedBox(
-                    width: 150,
-                    height: 300,
+                    width: 200,
+                    height: 250,
                     child: Image.asset('assets/GeneralImages/clothes.png')),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const ThirdPage()));
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.amber,
-                  ),
-                  child: Text(
-                    'Review Vocabulary',
-                    style: GoogleFonts.mulish(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.white,
+                Container(
+                  width: 200,
+                  height: 40,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => InstructionsScreen()));
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.lightBlue,
+                    ),
+                    child: Text(
+                      'Instructions',
+                      style: GoogleFonts.mulish(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    initPuzzle();
-                    generatePuzzle();
-                    fillPuzzleInterface();
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => CrosswordGame()));
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.lightGreen,
-                  ),
-                  child: Text(
-                    'Word Puzzle Game',
-                    style: GoogleFonts.mulish(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.white,
+                SizedBox(height: 5),
+                Container(
+                  width: 200,
+                  height: 40,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ThirdPage()));
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.lightBlue,
+                    ),
+                    child: Text(
+                      'Review Vocabulary',
+                      style: GoogleFonts.mulish(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
+                SizedBox(height: 5),
+                Container(
+                  width: 200,
+                  height: 40,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      initPuzzle();
+                      generatePuzzle();
+                      fillPuzzleInterface();
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => CrosswordGame()));
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.lightBlue,
+                    ),
+                    child: Text(
+                      'Word Puzzle Game',
+                      style: GoogleFonts.mulish(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(width: 20, height: 50),
+                Row(
+                  children: [
+                    Expanded(
+                        child: SizedBox(
+                      width: 0.5,
+                    )),
+                    Expanded(
+                        child: SizedBox(
+                            width: 150,
+                            height: 100,
+                            child: Image.asset('assets/UCR_icon.png'))),
+                    Expanded(
+                        child: SizedBox(
+                            width: 150,
+                            height: 100,
+                            child: Image.asset('assets/TCU658.png'))),
+                    Expanded(
+                        child: SizedBox(
+                            width: 150,
+                            height: 100,
+                            child: Image.asset(
+                                'assets/facultad_letras_logo.png'))),
+                    Expanded(
+                        child: SizedBox(
+                      width: 0.5,
+                    ))
+                  ],
+                )
               ],
             ),
           ),

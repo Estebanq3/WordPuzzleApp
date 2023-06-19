@@ -154,7 +154,7 @@ class ClothesPage extends StatelessWidget {
             ),
           ),
           Text(
-            "Cardigán",
+            "Cárdigan",
             textAlign: TextAlign.center,
             style: GoogleFonts.mulish(
               fontSize: 20,
@@ -167,7 +167,7 @@ class ClothesPage extends StatelessWidget {
     ),
     Container(
       alignment: Alignment.center,
-      color: Colors.yellow,
+      color: Colors.lightBlue,
       child: Column(
         children: [
           Image.asset(
@@ -486,7 +486,7 @@ class ClothesPage extends StatelessWidget {
             height: 200,
           ),
           Text(
-            "Jumper pullover",
+            "Jumper",
             textAlign: TextAlign.center,
             style: GoogleFonts.mulish(
               fontSize: 20,
@@ -539,7 +539,7 @@ class ClothesPage extends StatelessWidget {
     ),
     Container(
       alignment: Alignment.center,
-      color: Colors.tealAccent,
+      color: Colors.lightBlue,
       child: Column(
         children: [
           Image.asset(
@@ -610,7 +610,7 @@ class ClothesPage extends StatelessWidget {
             height: 200,
           ),
           Text(
-            "Pyjama",
+            "Pajamas",
             textAlign: TextAlign.center,
             style: GoogleFonts.mulish(
               fontSize: 20,
@@ -725,7 +725,7 @@ class ClothesPage extends StatelessWidget {
     ),
     Container(
       alignment: Alignment.center,
-      color: Colors.yellow,
+      color: Colors.lightBlue,
       child: Column(
         children: [
           Image.asset(
@@ -796,7 +796,7 @@ class ClothesPage extends StatelessWidget {
             height: 200,
           ),
           Text(
-            "Short",
+            "Shorts",
             textAlign: TextAlign.center,
             style: GoogleFonts.mulish(
               fontSize: 20,
@@ -805,7 +805,7 @@ class ClothesPage extends StatelessWidget {
             ),
           ),
           Text(
-            "Pantalón corto",
+            "Pantalones cortos",
             textAlign: TextAlign.center,
             style: GoogleFonts.mulish(
               fontSize: 20,
@@ -911,7 +911,7 @@ class ClothesPage extends StatelessWidget {
     ),
     Container(
       alignment: Alignment.center,
-      color: Colors.yellow,
+      color: Colors.lightBlue,
       child: Column(
         children: [
           Image.asset(
@@ -1097,7 +1097,7 @@ class ClothesPage extends StatelessWidget {
     ),
     Container(
       alignment: Alignment.center,
-      color: Colors.yellow,
+      color: Colors.lightBlue,
       child: Column(
         children: [
           Image.asset(
@@ -1190,7 +1190,7 @@ class ClothesPage extends StatelessWidget {
     ),
     Container(
       alignment: Alignment.center,
-      color: Colors.yellow,
+      color: Colors.lightBlue,
       child: Column(
         children: [
           Image.asset(

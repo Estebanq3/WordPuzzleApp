@@ -167,7 +167,7 @@ class ColoresPage extends StatelessWidget {
     ),
     Container(
       alignment: Alignment.center,
-      color: Colors.yellow,
+      color: Colors.lightBlue,
       child: Column(
         children: [
           Image.asset(
